@@ -1,0 +1,16 @@
+.people {
+    // background: paleturquoise;
+    position: absolute;
+    top: 350px;
+
+    input[type="number"] {
+        width: calc(100vw - 100px);
+        text-align: right;
+        padding: 3px 10px;
+        border: none;
+        outline: none;
+        background-color: $ltGrCyan;
+        border-radius: 10px;
+        color: $dkCyan;
+    }
+}
