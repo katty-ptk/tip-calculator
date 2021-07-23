@@ -9,6 +9,7 @@ body {
 body .label {
   color: #7f9c9f;
   font-size: 20px;
+  font-weight: bold;
 }
 body input[type=number] {
   font-family: "Space Mono", monospace;
@@ -103,4 +104,19 @@ form span input[type=number]::placeholder {
   color: white;
   background-color: #c5e4e7;
   border-radius: 10px;
+}
+
+.people {
+  position: absolute;
+  top: 350px;
+}
+.people input[type=number] {
+  width: calc(100vw - 100px);
+  text-align: right;
+  padding: 3px 10px;
+  border: none;
+  outline: none;
+  background-color: #c5e4e7;
+  border-radius: 10px;
+  color: #00494d;
 }/*# sourceMappingURL=style.css.map */
