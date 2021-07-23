@@ -1,0 +1,34 @@
+.results {
+    background-color: $dkCyan;
+    position: absolute;
+    top: 450px;
+    width: calc(100vw - 100px);
+    height: 200px;
+    padding: 20px;
+    color: $white;
+    border-radius: 10px;
+
+    div {
+        display: flex;
+
+
+        span {
+            display: block;
+            color: $dkGrCyanLt;
+        }
+    }
+
+    .reset {
+        width: calc(100vw - 140px);
+        height: 40px;
+        background: $strongCyan;
+        color: $dkCyan;
+        border-radius: 10px;
+        text-transform: uppercase;
+        border: none;
+        font-family: $fontFamily;
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+    }
+}
