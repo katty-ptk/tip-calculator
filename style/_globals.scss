@@ -5,4 +5,14 @@
 
 body {
     background-color: $dkGrCyan;
+
+    .label {
+        color: $dkGrCyanLt;
+        font-size: 20px;
+    }
+
+    input[type="number"] { 
+        font-family: $fontFamily;
+        font-weight: bold;
+    }
 }
