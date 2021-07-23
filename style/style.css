@@ -15,6 +15,13 @@ body input[type=number] {
   font-family: "Space Mono", monospace;
   font-weight: bold;
 }
+body .note {
+  position: absolute;
+  right: 20px;
+  margin-top: 5px;
+  font-size: 24px;
+  color: #26c0ab;
+}
 
 .container {
   position: relative;
@@ -119,4 +126,35 @@ form span input[type=number]::placeholder {
   background-color: #c5e4e7;
   border-radius: 10px;
   color: #00494d;
+}
+
+.results {
+  background-color: #00494d;
+  position: absolute;
+  top: 450px;
+  width: calc(100vw - 100px);
+  height: 200px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+.results div {
+  display: flex;
+}
+.results div span {
+  display: block;
+  color: #7f9c9f;
+}
+.results .reset {
+  width: calc(100vw - 140px);
+  height: 40px;
+  background: #26c0ab;
+  color: #00494d;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: none;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
