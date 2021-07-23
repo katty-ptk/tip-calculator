@@ -1,0 +1,38 @@
+.select-tip {
+    position: absolute;
+    top: 150px;
+
+    .tipOptions {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+
+        text-align: center;
+        color: $white;
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-25%);
+
+        div {
+            background-color: $dkCyan;
+            height: 40px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            p {
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+
+        input[type="number"] {
+            border: none;
+            outline: none;
+            text-align: center;
+            color: $white;
+            background-color: $ltGrCyan;
+            border-radius: 10px;
+        }
+    }
+}

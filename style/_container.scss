@@ -1,7 +1,7 @@
 .container {
     position: relative;
     background: $white;
-    height: calc(100vh - 150px);
+    height: 100vh;
     margin-top: 100px;
     padding: 50px;
     font-family: 'Space Mono', monospace;
@@ -9,57 +9,4 @@
 
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-
-    form {
-        position: absolute;
-        // top: 50px;
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-            color: $dkGrCyanLt;
-            font-size: 20px;
-        }
-
-        span {
-            position: relative;
-            font-family: 'Space Mono', monospace;
-            font-weight: bold;
-            font-size: $fontSizeInput;
-            color: $dkCyan;
-
-
-            &::before {
-                content: '$';
-                position: absolute;
-                margin-left: 10px;
-                font-size: 24px;
-            }
-
-            input[type="number"] {
-                width: calc(100vw - 100px);
-                height: 40px;
-                margin-left: 0px;
-                background: $ltGrCyan;
-                border: none;
-                border-radius: 5px;
-                padding: 5px;
-                
-                text-align: right;
-                font-family: 'Space Mono', monospace;
-                font-weight: bold;
-                font-size: $fontSizeInput;
-                color: $dkCyan;    
-    
-    
-                &:focus {
-                    outline: none;
-                }
-
-                &::placeholder {
-                    color: rgb(180, 180, 180);
-                }
-            }    
-        }
-    }
 }

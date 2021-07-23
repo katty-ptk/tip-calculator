@@ -6,11 +6,19 @@
 body {
   background-color: #5e7a7d;
 }
+body .label {
+  color: #7f9c9f;
+  font-size: 20px;
+}
+body input[type=number] {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+}
 
 .container {
   position: relative;
   background: white;
-  height: calc(100vh - 150px);
+  height: 100vh;
   margin-top: 100px;
   padding: 50px;
   font-family: "Space Mono", monospace;
@@ -18,29 +26,28 @@ body {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
-.container form {
+
+form {
   position: absolute;
 }
-.container form label {
+form label {
   display: block;
   margin-bottom: 10px;
-  color: #7f9c9f;
-  font-size: 20px;
 }
-.container form span {
+form span {
   position: relative;
   font-family: "Space Mono", monospace;
   font-weight: bold;
   font-size: 24px;
   color: #00494d;
 }
-.container form span::before {
+form span::before {
   content: "$";
   position: absolute;
   margin-left: 10px;
   font-size: 24px;
 }
-.container form span input[type=number] {
+form span input[type=number] {
   width: calc(100vw - 100px);
   height: 40px;
   margin-left: 0px;
@@ -49,20 +56,51 @@ body {
   border-radius: 5px;
   padding: 5px;
   text-align: right;
-  font-family: "Space Mono", monospace;
-  font-weight: bold;
   font-size: 24px;
   color: #00494d;
 }
-.container form span input[type=number]:focus {
+form span input[type=number]:focus {
   outline: none;
 }
-.container form span input[type=number]::-moz-placeholder {
+form span input[type=number]::-moz-placeholder {
   color: #b4b4b4;
 }
-.container form span input[type=number]:-ms-input-placeholder {
+form span input[type=number]:-ms-input-placeholder {
   color: #b4b4b4;
 }
-.container form span input[type=number]::placeholder {
+form span input[type=number]::placeholder {
   color: #b4b4b4;
+}
+
+.select-tip {
+  position: absolute;
+  top: 150px;
+}
+.select-tip .tipOptions {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-25%);
+}
+.select-tip .tipOptions div {
+  background-color: #00494d;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.select-tip .tipOptions div p {
+  text-align: center;
+  line-height: 40px;
+}
+.select-tip .tipOptions input[type=number] {
+  border: none;
+  outline: none;
+  text-align: center;
+  color: white;
+  background-color: #c5e4e7;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

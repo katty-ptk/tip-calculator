@@ -1,0 +1,48 @@
+form {
+    position: absolute;
+    // top: 50px;
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    span {
+        position: relative;
+        font-family: $fontFamily;
+        font-weight: bold;
+        font-size: $fontSizeInput;
+        color: $dkCyan;
+
+
+        &::before {
+            content: '$';
+            position: absolute;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+
+        input[type="number"] {
+            width: calc(100vw - 100px);
+            height: 40px;
+            margin-left: 0px;
+            background: $ltGrCyan;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            
+            text-align: right;
+            font-size: $fontSizeInput;
+            color: $dkCyan;    
+
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: rgb(180, 180, 180);
+            }
+        }    
+    }
+}
