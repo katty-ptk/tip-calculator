@@ -4,7 +4,6 @@ form {
 
     label {
         display: block;
-        margin-bottom: 10px;
     }
 
     span {
@@ -38,6 +37,7 @@ form {
 
             &:focus {
                 outline: none;
+                border: 2px solid $strongCyan;
             }
 
             &::placeholder {

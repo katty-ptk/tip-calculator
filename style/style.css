@@ -10,6 +10,7 @@ body .label {
   color: #7f9c9f;
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 3px;
 }
 body input[type=number] {
   font-family: "Space Mono", monospace;
@@ -20,7 +21,7 @@ body .note {
   right: 20px;
   margin-top: 5px;
   font-size: 24px;
-  color: #26c0ab;
+  color: #70f5e3;
 }
 
 .container {
@@ -40,7 +41,6 @@ form {
 }
 form label {
   display: block;
-  margin-bottom: 10px;
 }
 form span {
   position: relative;
@@ -69,6 +69,7 @@ form span input[type=number] {
 }
 form span input[type=number]:focus {
   outline: none;
+  border: 2px solid #70f5e3;
 }
 form span input[type=number]::-moz-placeholder {
   color: #b4b4b4;
@@ -112,6 +113,10 @@ form span input[type=number]::placeholder {
   background-color: #c5e4e7;
   border-radius: 10px;
 }
+.select-tip .tipOptions input[type=number]:focus {
+  outline: none;
+  border: 2px solid #70f5e3;
+}
 
 .people {
   position: absolute;
@@ -126,6 +131,9 @@ form span input[type=number]::placeholder {
   background-color: #c5e4e7;
   border-radius: 10px;
   color: #00494d;
+}
+.people input[type=number]:focus {
+  border: 2px solid #e05522;
 }
 
 .results {
@@ -148,7 +156,7 @@ form span input[type=number]::placeholder {
 .results .reset {
   width: calc(100vw - 140px);
   height: 40px;
-  background: #26c0ab;
+  background: #70f5e3;
   color: #00494d;
   border-radius: 10px;
   text-transform: uppercase;
@@ -157,4 +165,8 @@ form span input[type=number]::placeholder {
   font-weight: bold;
   outline: none;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.results .reset:hover {
+  background-color: #7ee2d6;
 }/*# sourceMappingURL=style.css.map */
