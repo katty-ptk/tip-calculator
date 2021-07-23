@@ -12,5 +12,9 @@
         background-color: $ltGrCyan;
         border-radius: 10px;
         color: $dkCyan;
+
+        &:focus {
+            border: 2px solid $orange;
+        }
     }
 }
