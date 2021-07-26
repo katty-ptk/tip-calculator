@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   
+  <!-- linking jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <title>Tip calculator app</title>
 
 </head>
@@ -21,10 +24,10 @@
   <div class="container">
 
     <!-- tip input -->
-    <form>
+    <form onsubmit="return false">
       <label for="tip" class="label">Bill</label>
       <span>
-        <input type="number" id="tip" placeholder="0.00">
+        <input type="number" id="bill" placeholder="0.00" autocomplete="off">
       </span>
     </form>
 
@@ -48,13 +51,13 @@
         <div class="tip">
           <p>50%</p>
         </div>
-        <input type="number" class="tip" placeholder="Custom">
+        <input type="number" class="tip" id="custom-tip" placeholder="Custom">
       </div>
     </section>
 
     <section class="people">
       <p class="label">Number of people</p>
-      <input type="number" placeholder="Enter here">
+      <input type="number" placeholder="Enter here" id="people">
     </section>
 
 
